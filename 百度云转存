@@ -1,0 +1,11 @@
+//设置起始的文件，如第1个就是0，第100个就是99
+var start = 1
+//一次最多选中500个
+var max = 501
+var dd = $("dd.g-clearfix.AuPKyz.open-enable");
+$.each(dd,function(n,v){
+    if ( start >= max ) return false;
+    var position = $(v).attr("_position");
+    if (position >= start) {$(v).children("span.EOGexf").trigger("click");
+    start ++;}
+});
